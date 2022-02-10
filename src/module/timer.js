@@ -6,7 +6,7 @@ export function timer() {
     const hourTimer = document.querySelector('.timer-hour');
     const minutTimer = document.querySelector('.timer-minute');
     const secondTimer = document.querySelector('.timer-seconds');
-    let millisecondsTime = 3000;
+    let millisecondsTime = convertMinutToMilliseconds( valueTimer.value );
     let timerInterval = null;
       
 
