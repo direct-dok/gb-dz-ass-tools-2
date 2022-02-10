@@ -1,0 +1,96 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button, 
+input, 
+textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button__tab {
+    padding: 8px 15px;
+    background: #fff;
+    border: 2px solid #336c9e;
+    border-radius: 20px;
+}
+
+.button__tab:hover {
+    cursor: pointer;
+    background: #336c9e;
+    transition: .3s;
+    color: #fff;
+}
+
+.button_tab_active {
+    background: #336c9e;
+    color: #fff;
+    transition: .3s;
+}
+
+.tab {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.custom-label {
+    font-size: .8rem;
+    font-weight: 500;
+    margin: 0 0 .3rem;
+}
+
+.time-timer {
+    margin: 0 0 .3rem;
+}
+
+.control-timer {
+    background: #fff;
+    font-size: .8rem;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.control-timer:hover {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.start-timer {
+    border: 2px solid #237a1f;
+    color: #237a1f;
+}
+
+.start-timer:hover {
+    background: #237a1f;
+    color: #fff;
+}
+
+.stop-timer {
+    
+}
+
+.disabled-stop-button {
+    border: 2px solid #c4c4c4;
+    
+}
+
+.disabled-stop-button:disabled {
+    cursor: not-allowed;
+}
+
+.enabled-stop-button {
+    border: 2px solid #f53333;
+    color: #f53333;
+}
+
+.enabled-stop-button:hover {
+    background: #f53333;
+    color: #fff;
+}
+
+.tick-timer-container {
+    margin: 20px 0 0 0;
+    font-size: 2rem;
+}

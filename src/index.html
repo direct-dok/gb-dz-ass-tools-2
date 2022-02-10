@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+
+    <title>Webpack 5</title>
+</head>
+<body>
+    <button 
+        class="button__tab"
+        data-button-id="0"
+    ">
+        Калькулятор дат
+    </button>
+    <button 
+        class="button__tab"
+        data-button-id="1"
+    >
+        Таймер
+    </button>
+
+    <ul class="tab">
+        <li 
+            class="tab__item"
+            data-tab-item="0"
+        >
+            <h3>Калькулятор дат</h3>
+            <form id="datecalc">
+                <label>
+                    <strong>Первая дата:</strong>
+                    <input type="date" name="firstDate" />
+                </label>
+                <label>
+                    <strong>Вторая дата:</strong>
+                    <input type="date" name="secondDate" />
+                </label>
+                <button type="submit">Расчитать промежуток</button>
+                <p id="datecalc__result"></p>
+            </form>
+        </li>
+        <li 
+            class="tab__item"
+            data-tab-item="1"
+        >
+            <h3>Таймер</h3>
+            <div class="custom-label">Время в минутах</div>
+            <input type="number" value="1" class="time-timer" min="1">
+            <div>
+                <button class="control-timer start-timer">Старт</button>
+                <button class="control-timer stop-timer disabled-stop-button" disabled>Стоп</button>
+            </div>
+
+            <div class="tick-timer-container">
+                <span class="timer-hour">01</span>
+                <span class="separate-time">:</span>
+                <span class="timer-minute">00</span>
+                <span class="separate-time">:</span>
+                <span class="timer-seconds">00</span>
+            </div>
+        </li>
+    </ul>
+    
+</body>
+</html>
